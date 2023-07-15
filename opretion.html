@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS Opreation</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body id="body" onload="DataShow() , getMode() , CheckLang()">
+    <div class="Headers">
+        <div class="LogOut">
+            <button id="logout" onclick="location.href='index.html'">Log Out</button>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="head">
+            <h1 id="head1">cruds Project</h1>
+            <p id="head2">Proudct mangment system</p>
+        </div>
+        <div class="input" id="INP">
+            <input type="text" id="title" placeholder="Title">
+            <div class="price">
+                <input onkeyup="getTotalalPrice()" type="number" id="prod_price" placeholder="Product Price">
+                <input onkeyup="getTotalalPrice()" type="number" id="tax" placeholder="Tax">
+                <input onkeyup="getTotalalPrice()" type="number" id="ads" placeholder="ads">
+                <input onkeyup="getTotalalPrice()" type="number" id="disc" placeholder="Discount">
+                <small id="total" class="tot"></small>
+            </div>
+        <input type="number" id="count" placeholder="Count">
+        <input type="text" id="cat" placeholder="Category">
+        <button id="creatProd">Create</button>
+        </div>
+
+
+        <div class="allInfo">
+
+            <div class="searcharea">
+                <input type="text" id="search" placeholder="Search">
+                <div class="btnarea">
+                    <button id="searchTit" onclick="getSreachMode(this.id)">
+                        Search By Title
+                    </button>
+                    <button id="searchCat" onclick="getSreachMode(this.id)">
+                        Search By Category
+                    </button>
+                </div>
+            </div>
+            <div id="DeleteAll">
+                <button onclick="DeleteAllData()" id="Del">Delete All</button>
+            </div>
+            <table id="Tab" >
+                <thead>
+                    <tr>
+                        <th id="Thead1" >ID</th>
+                        <th id="Thead2" >title</th>
+                        <th id="Thead3" >price</th>
+                        <th id="Thead4" >taxes</th>
+                        <th id="Thead5" >Ads</th>
+                        <th id="Thead6">Discount</th>
+                        <th id="Thead7">total</th>
+                        <th id="Thead8">Category</th>
+                        <th id="Thead9">Count</th>
+                        <th id="Thead10">Update</th>
+                        <th id="Thead11">Buy One</th>
+                        <th id="Thead12">Delete</th>
+                    </tr>
+                </thead>
+
+
+                <tbody id="TableData">
+
+                </tbody>
+
+
+            </table>
+        </div>
+    </div>
+    <script src="JS/main.js"></script>
+</body>
+</html>

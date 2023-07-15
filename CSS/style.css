@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #222;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+
+}
+
+
+
+.Headers{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.Headers button{
+    width: 300px;
+}
+
+.Modes button{
+    width: 50px;
+    border-radius: 100%;
+    margin: 5px;
+}
+
+#mod , #lang{
+    background-color: #fff;
+}
+
+#lang{
+    color: #111;
+    font-weight: bolder;
+}
+.container
+{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    margin: 10px;
+}
+input , .tot{
+    width: 100%;
+    background-color: #111;
+    border: none;
+    outline: 0;
+    padding: 3px;
+    margin: 5px 0;
+    color: azure;
+    height: 30px;
+    border-radius: 4px;
+}
+input:focus{
+    background-color: rgb(0, 0, 0);
+    scale: 1.01;
+}
+.price input{
+    width: 20%;
+}
+
+.tot{
+    background-color: rgb(15, 80, 77);
+    padding: 7px;
+}
+
+.tot::before{
+    content: 'Total price :  ';
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: azure;
+    transition: 0.9s;
+    margin: 5px 0px;
+}
+
+button:hover{
+    background-color: rgb(37, 3, 65);
+    letter-spacing: 2px;
+}
+
+.btnarea{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnarea button{
+    width: 46%;
+}
+
+.btnarea button:hover {
+    letter-spacing:    1px;
+}
+
+
+#DeleteAll{
+    margin: 10px 0px;
+    display: none;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    margin: 30px 0px;
+}
+table th{
+    color: azure;
+}
+table button{
+    height: 25px;
+}
+table button:hover{
+    letter-spacing: 1px;
+}
+th  , td {
+    padding: 5px;
+}
